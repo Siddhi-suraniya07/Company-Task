@@ -1,0 +1,18 @@
+{
+    "sourceFile": "backend/controllers/contact.controller.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1766169452775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1766169452775,
+            "name": "Commit-0",
+            "content": "const Contact = require(\"../models/Contact\"); // ✅ REQUIRED\r\n\r\nexports.submitContact = async (req, res) => {\r\n    try {\r\n        const { fullName, email, mobile, city } = req.body;\r\n\r\n        if (!fullName || !email || !mobile || !city) {\r\n            return res.status(400).json({ message: \"All fields are required\" });\r\n        }\r\n\r\n        const contact = await Contact.create({ fullName, email, mobile, city });\r\n\r\n        res.status(201).json({ message: \"Contact submitted successfully\", data: contact });\r\n    } catch (error) {\r\n        console.error(error);\r\n        res.status(500).json({ message: \"Contact submission failed\", error: error.message });\r\n    }\r\n};\r\n\r\nexports.getAllContacts = async (req, res) => {\r\n  try {\r\n    const contacts = await Contact.find().sort({ createdAt: -1 });\r\n    res.status(200).json(contacts);\r\n  } catch (error) {\r\n    res.status(500).json({ message: \"Failed to fetch contacts\" });\r\n  }\r\n};\r\n\r\n"
+        }
+    ]
+}

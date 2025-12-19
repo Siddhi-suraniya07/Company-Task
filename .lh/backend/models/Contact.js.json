@@ -1,0 +1,18 @@
+{
+    "sourceFile": "backend/models/Contact.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1766169452774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1766169452774,
+            "name": "Commit-0",
+            "content": "const mongoose = require(\"mongoose\");\r\n\r\nconst contactSchema = new mongoose.Schema(\r\n    {\r\n        fullName: {\r\n            type: String,\r\n            required: true,\r\n        },\r\n        email: {\r\n            type: String,\r\n            required: true,\r\n        },\r\n        mobile: {\r\n            type: String,\r\n            required: true,\r\n        },\r\n        city: {\r\n            type: String,\r\n            required: true,\r\n        },\r\n    },\r\n    { timestamps: true }\r\n);\r\n\r\nmodule.exports = mongoose.model(\"Contact\", contactSchema);\r\n"
+        }
+    ]
+}

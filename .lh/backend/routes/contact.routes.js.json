@@ -1,0 +1,18 @@
+{
+    "sourceFile": "backend/routes/contact.routes.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1766169452768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1766169452768,
+            "name": "Commit-0",
+            "content": "const express = require(\"express\");\r\nconst { submitContact, getAllContacts } = require(\"../controllers/contact.controller\");\r\n\r\nconst router = express.Router();\r\n\r\nrouter.post(\"/\", submitContact);\r\nrouter.get(\"/\", getAllContacts);\r\n\r\nmodule.exports = router;\r\n"
+        }
+    ]
+}

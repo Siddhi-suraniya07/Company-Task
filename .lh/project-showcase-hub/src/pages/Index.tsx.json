@@ -1,0 +1,18 @@
+{
+    "sourceFile": "project-showcase-hub/src/pages/Index.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1766167116142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1766167116142,
+            "name": "Commit-0",
+            "content": "import Header from '@/components/landing/Header';\r\nimport HeroSection from '@/components/landing/HeroSection';\r\nimport AboutRealtorSection from '@/components/landing/AboutRealtorSection';\r\nimport WhyChooseUsSection from '@/components/landing/WhyChooseUsSection';\r\nimport AboutUsSection from '@/components/landing/AboutUsSection';\r\nimport ProjectsSection from '@/components/landing/ProjectsSection';\r\nimport ClientsSection from '@/components/landing/ClientsSection';\r\nimport Footer from '@/components/landing/Footer';\r\n\r\nconst Index = () => {\r\n  return (\r\n    <div className=\"min-h-screen\">\r\n      <Header />\r\n      <HeroSection />\r\n      <AboutRealtorSection />\r\n      <WhyChooseUsSection />\r\n      <AboutUsSection />\r\n      <ProjectsSection />\r\n      <ClientsSection />\r\n      <Footer />\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Index;\r\n"
+        }
+    ]
+}
